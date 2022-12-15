@@ -1,0 +1,711 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.body{
+	width: 100%;
+	min-height: 100vh;
+	background: url(mainBg.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	overflow-x: hidden;
+}
+
+.header{
+	height: 80px;
+	width: 100%;
+	background: #251b1b;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	transition: height 0.5s;
+	z-index: 200;
+}
+
+.logo{
+	height: 60%;
+	position: absolute;
+	left: 10px;
+	bottom: 0;
+	top: 15%;
+	transition: height 0.5s;
+}
+
+.resName{
+	font-family: Cinzel;
+	font-size: 40px;
+	color: #C2DB3A;
+	transition: font-size 0.5s;
+}
+
+.nameLine{
+	height: 2px;
+	width: 100px;
+	background: #C2DB3A;
+	margin: 20px;
+}
+
+.main{
+	width: 100%;
+	position: absolute;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	top: 0px;
+	right: 0;
+	left: 0;
+	overflow: hidden;
+	background: url(Mainbackground.png);
+	background-size: cover;
+}
+
+.mainTitle{
+	margin-top: 100px;
+	margin-left: 50px;
+	font-size: 95px;
+	font-family: Raleway;
+}
+
+.giorgio{
+	color: #202020;
+}
+
+.veller{
+	z-index: 100;
+	color: #C2DB3A;
+}
+
+.xpCursive{
+	color: #202020;
+	margin-top: -30px;
+	font-family: Pinyon Script;
+	font-size: 120px;
+	z-index: 10;
+}
+
+.VellerIMG{
+	border-radius: 10px;
+	height: 445px;
+	width: 445px;
+	text-align: center;
+	background: #251b1b;
+	color: #C2DB3A;
+	font-size: 40px;
+	float: left;
+	margin: 100px;
+	font-family: Dancing Script;
+	opacity: 0;
+	box-shadow: 10px 5px 10px #000;
+}
+
+.VellerIMG img{
+	position: relative;
+	top: 85px;
+	margin: 0px 100px;
+	height: 200px;
+}
+
+.VellerIMG div{
+	position: relative;
+	top: 100px;
+}
+
+.underline{
+	position: relative;
+	top: -90px;
+	width: 0;
+	animation: ;
+}
+
+.contrastSquare{
+	position: absolute;
+	width: 400px;
+	height: 350px;
+	background: #0004;
+	left: 250px;
+	top: 160px;
+}
+
+@keyframes incrementSize{
+	from{
+		width: 0px;
+	}
+	to{
+		width: 305px;
+	}
+}
+
+.go-menu{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 93vh;
+	border: none;
+	background: #0009;
+	border-top-left-radius: 30px;
+	font-size: 35px;
+	right: 0;
+	transition: background 0.4s;
+}
+
+.go-menu:hover{
+	background: #fff4;
+}
+
+.fa-arrow-down{
+	color:#fff9;
+}
+
+.nav{
+	width: 100%;
+	height: 60px;
+	background: #0009;
+	position: fixed;
+	transition: transform 0.5s;
+	z-index: 200;
+}
+
+.nav__ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+.nav__ul a{
+	color: #fff;
+	font-family: Montserrat;
+	font-size: 20px;
+	transition: color 0.3s;
+}
+
+.ul__li{
+	padding: 20px;
+	list-style: none;
+	margin: 0 20px;
+	transition: background 0.3s; 
+}
+
+.nav__ul a:hover{
+	color: #C2DB3A;
+}
+
+.menu{
+	height: 720px;
+	width: 550px;
+	background: url(https://i.pinimg.com/originals/3f/48/34/3f483410b8f2f1eb486efa7142deefc3.jpg);
+	background-size: cover;
+	position: relative;
+	margin: 80px; 
+	border-radius: 16px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 30px;
+	color: #fff;
+}
+
+.menus{
+	height: 1000px;
+	width: 110%;
+	position: relative;
+	top: 140vh;
+	display: flex;
+	font-family: Cinzel;
+	opacity: 0;
+	transition: opacity 1s;
+	transform: translateY(0px);
+	animation:;
+	left: -5%;
+}
+
+.menuOption{
+	margin: 0px 100px;
+	position: relative;
+	left: -80px;
+	cursor: help;
+}
+
+.prices-container{
+	position: absolute;
+	top: 25px;
+	left: 80%;
+	width: 90px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.price{
+	margin: 19px;
+	width: 90px;
+	color: #fff;
+}
+
+.logo{
+	position: absolute;
+	top: 30vh;
+	left: 60vw;
+	height: 400px;
+}
+
+.arrowDescription{
+	position: absolute;
+	right: 60px;
+	bottom: 0;
+	font-size: 30px;
+	font-family: Montserrat;
+	color: #C2DB3A;
+}
+
+.sauces{
+	position: relative;
+	left: 120px;
+	font-size: 25px;
+	text-decoration: underline;
+	text-underline-offset: 8px;
+}
+
+.fullMenu{
+	position: absolute;
+	left: 33vw;
+	top: 140vh;
+	font-size: 50px;
+	font-family: Dancing Script;
+	color: #000;
+}
+
+.fullMenu button{
+	width: 80px;
+	height: 40px;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	margin-left: 30px;
+	position: relative;
+	top: -6px;
+	font-family: Raleway;
+	font-size: 15px;
+	background: #0008;
+	transition: background 0.3s;
+}
+
+.fullMenu button:hover{
+	background: #0009;
+}
+
+.fullMenu button:active{
+	background: #fff9
+}
+
+.showMenu-container{
+	position: absolute;
+	top: 300px;
+	width: 100%;
+	text-align: center;
+}
+
+.dessertPrices .price{
+	margin: 25px;
+}
+
+.drinksPrices .price{
+	margin: 30px;
+}
+
+.dessertPrices{
+	top: 20px;
+}
+
+.showMenu{
+	height: 30px;
+	width: 60px;
+	background: #0005;
+	border: none;
+	border-radius: 3px;
+}
+
+.fa-angle-down{
+	font-size: 25px;
+	color: #fff9;	
+}
+
+.showMenu:active{
+	background: #fff5;
+}
+
+[data-title]:hover:after {
+        opacity: 1;
+        transition: all 0.1s ease 0.5s;
+        visibility: visible;
+      }
+      [data-title]:after {
+        content: attr(data-title);
+        position: absolute;
+        bottom: -1.6em;
+        left: 100%;
+        padding: 4px 4px 4px 8px;
+        color: #fff9;
+        white-space: nowrap;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        background: #1f1d1e;
+        border: 1px solid #C2DB3A;
+        opacity: 0;
+        z-index: 99999;
+        visibility: hidden;
+        letter-spacing: 1px;
+      }
+      [data-title] {
+        position: relative;
+      }
+
+
+.menusM{
+	top: 80vh;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.menusM2{
+	width: 100%;
+	top: 50vh;
+	opacity: 1;
+	display: flex;
+	justify-content: center;
+	left: 0px;
+}
+
+.menusM2 .menu1 .menuOption{
+	background: none;
+}
+
+.menuTitle{
+	position: absolute;
+	top: 30vh;
+	text-align: center;
+	width: 100%;
+	font-size: 80px;
+	font-family: Dancing Script;
+	color: #C2DB3A;
+}
+
+.menuTitle2{
+	position: absolute;
+	top: 325vh;
+	text-align: center;
+	width: 100%;
+	font-size: 100px;
+	font-family: Dancing Script;
+	color: #C2DB3A;
+}
+
+.menuTitle3{
+	position: absolute;
+	top: 445vh;
+	text-align: center;
+	width: 100%;
+	font-size: 100px;
+	font-family: Dancing Script;
+	color: #C2DB3A;
+}
+
+.menusM2 .menu{
+	height: 500px;
+}
+
+.drinks .menu{
+	height: 800px;
+}
+
+.drinks{
+	position: absolute;
+	top: 320vh;
+}
+
+.goHome-container{
+	position: absolute;
+	top: 610vh;
+	width: 100%;
+	text-align: center;
+	height: 80px;
+	align-items: center;
+}
+
+.goHome{
+	height: 40px;
+	width: 80px;
+	color:#C2DB3A;
+	border: 1px solid #C2DB3A;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+	background: #0009;
+	transition: background 0.3s;
+}
+
+.goHome:hover{
+	background: #fff7;
+}
+
+.goHome:active{
+	background: #0005;
+}
+
+.footer{
+	background: url(footer-background.jpg);
+	background-attachment: fixed;
+	height: 300px;
+	width: 100%;
+	position: absolute;
+	top: 100vh;
+	opacity: 0.8;
+}
+
+.findUs{
+	height: 300px;
+	width: 100%;
+	position: absolute;
+	top: 100vh;
+	color: #C2DB3A;
+	font-family: Montserrat;
+	font-size: 25px;
+}
+
+.verticalLine{
+	position: absolute;
+	height: 170px;
+	width: 3px;
+	background: #C2DB3A;
+	left: 80px;
+	top: 70px;
+}
+
+.address, .phoneNumber, .mail{
+	position: relative;
+	left: 125px;
+	top: 80px;
+	margin-bottom: 30px;
+}
+
+.aboutUs-main{
+	position: absolute;
+	color: #fff;
+	top: 10vh;
+	height: 90vh;
+}
+
+.aboutUs{
+	position: relative;
+	width: 40%;
+	float: right;
+	font-size: 17px;
+	top: 50px;
+	font-family: Montserrat;
+	text-align: justify;
+	margin: 50px;
+	opacity: 0;
+}
+
+.wNYT{
+	opacity: 0;
+}
+
+@keyframes appear{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes up{
+	from{
+		top: 80px;
+	}
+	to{
+		top: 40px;
+	}
+}
+
+@keyframes MenusUp{
+	from{
+		transform: translateY(0px);
+	}
+	to{
+		transform: translateY(-200px);
+	}
+}
+
+@keyframes down{
+	from{
+		top: 40px;
+	}
+	to{
+		top: 80px;
+	}
+}
+
+@keyframes upRes{
+	from{
+		top: 60px;
+	}
+	to{
+		top: 40px;
+	}
+}
+
+@keyframes downRes{
+	from{
+		top: 40px;
+	}
+	to{
+		top: 60px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.header{
+		height: 60px;
+	}
+	.logo{
+		height: 70%;
+	}
+	.resName{
+		font-size: 30px;
+	}
+	.nameLine{
+		width: 50px;
+	}
+}
+
+
+@media screen and (max-width: 670px){
+	.ul__li a{
+		font-size: 18px;
+	}
+	.resName{
+		font-size: 25px;
+	}
+	.giorgio{
+		font-size: 15vw;
+	}
+	.xpCursive{
+		font-size: 18vw;
+	}
+	.giorgio, .xpCursive{
+		position: relative;
+		top: -50px;
+		left: -30px;
+	}
+	.contrastSquare{
+		height: 48vw;
+		width: 55vw;
+		left: 32%;
+		z-index: 100;
+	}
+	.underline{
+		left: -30px;
+		top: -110px;
+	}
+}
+
+@media screen and (max-width: 510px){
+	.findUs{
+		font-size: 15px;
+		width: 100vw;
+		left: -50px;
+	}
+	.address, .phoneNumber, .mail{
+		left: 110px;
+	}
+}
+
+@media screen and (max-width: 490px){
+	.xpCursive{
+		top: -30px;
+	}
+}
+
+@media screen and (max-width: 390px){
+	.ul__li{
+		margin: 0;
+	}
+	.ul__li a{
+		font-size: 15px;
+	}
+	.contrastSquare{
+			left: 35%;
+	}
+	.go-menu{
+		border-radius: 100%;
+		position: absolute;
+		left: 41vw;
+		top: 85vh;
+	}
+	.arrowDescription{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 350px){
+	.contrastSquare{
+		top: 30%;
+	}
+}
+
+@media screen and (max-width: 310px){
+	.nameLine{
+		margin: 10px;
+	}
+}
+
+@media screen and (max-width: 670px) and (min-width: 490px){
+	.underline{
+		left: -30px;
+		top: -130px;
+	}
+}
+
+@media screen and (max-width: 1100px){
+
+		.VellerIMG-container{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+		.aboutUs-container{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			height: 500px;
+		}
+		.aboutUs-container div{
+			top: -10%;
+			width: 80%;
+		}
+}
+
+.menu1{
+	position: absolute;
+	width: 500px;
+	top : 140vh
+}
+
+.menu2{
+	width: 500px;
+}
+
+.drinks .menu1{
+	width: 550px;
+}
